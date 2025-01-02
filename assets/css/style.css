@@ -288,7 +288,7 @@ body {
 .nav-toggle-btn .close { display: none; }
 
 .nav-toggle-btn .open,
-.nav-toggle-btn.active .close { display: block; }
+.nav-toggle-btn.active .close { display: block; color: var(--safety-orange);}
 
 .navbar {
   background-color: var(--white-1);
