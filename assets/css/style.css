@@ -166,7 +166,11 @@ body {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+.arabic{
+  text-align: right !important;
 
+  
+}
 .container { padding-inline: 15px; }
 
 .btn {
@@ -303,7 +307,7 @@ body {
   transition: 0.3s var(--cubic-out);
   max-height: 0;
   visibility: hidden;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .navbar.active {
@@ -333,23 +337,74 @@ body {
 .navbar-link:is(:hover, :focus) { color: var(--safety-orange); }
 
 .header .btn { margin-block-start: 10px; }
-select {
-  background-color: var(--safety-orange);
-  opacity: 0.85;
-  border: none;
+/* Basic custom select styling */
+.custom-select {
+  position: relative;
+  width: 150px;
 }
-select:is(:hover, :focus) { opacity: 1; }
-option {
-  background-color: var(--white-1);
-  color: var(--black);
-  border: none;
-}
-select option:hover{ 
-  background-color: var(--safety-orange)!important;
-  color: var(--white-1); 
+
+.custom-select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   cursor: pointer;
 }
-option:is(:checked) { background-color: var(--safety-orange); color: var(--white-1); }
+/* Initial state for the custom select options */
+.custom-select-options {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position dropdown below the select box */
+  z-index: 99; /* Make sure it's on top of other elements */
+  background-color: var(--white-1);
+  border: 1px solid var(--light-gray);
+  list-style: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.custom-select-options.open {
+  display: block; /* Display when the dropdown is open */
+}
+
+/* Style for each option */
+.option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.option:hover {
+  background-color: var(--safety-orange);
+  color: var(--white-1);
+}
+
+/* Style for the custom select box */
+.custom-select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--safety-orange);
+  padding: 5px;
+  background-color: var(--safety-orange);
+  color: var(--white-1);
+  border-radius: 6px;
+  user-select: none;
+}
+
+.option img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.custom-select-box.open img {
+  transform: rotate(180deg); /* Rotate icon when the dropdown is open */
+}
+
 
 
 .btn-primary:is(:hover, :focus) { opacity: 1; }
@@ -455,6 +510,12 @@ option:is(:checked) { background-color: var(--safety-orange); color: var(--white
 }
 
 .about :is(.section-title, .section-text) { text-align: left; }
+
+/*
+* Arabic text alignment
+ */
+
+.arabic .about :is(.section-title, .section-text) { text-align: right; }
 
 .about .section-title { margin-block-end: 5px; }
 
@@ -603,6 +664,9 @@ option:is(:checked) { background-color: var(--safety-orange); color: var(--white
 .copyright {
   font-size: var(--fs-6);
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright-link {
@@ -872,6 +936,9 @@ option:is(:checked) { background-color: var(--safety-orange); color: var(--white
     gap: 30px;
     text-align: left;
   }
+  .arabic .container{
+    text-align: right;
+  }
 
   .hero-content { margin-block-end: 0; }
 
@@ -888,6 +955,12 @@ option:is(:checked) { background-color: var(--safety-orange); color: var(--white
     width: 2px;
     height: 100%;
     background-color: var(--safety-orange);
+  }
+  /* Arabic text alignment */
+  
+  .arabic .hero-subtitle::before {
+    right: 0;
+    left: unset;
   }
 
   .hero-text,
