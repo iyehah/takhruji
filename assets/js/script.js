@@ -134,14 +134,14 @@ const translations = {
     contactDescription:"Vous pouvez nous contacter via les moyens disponibles ci-dessous, et nous serons ravis de communiquer avec vous et de vous aider à rendre vos moments de remise de diplôme inoubliables.",
     contactTitle:"Contactez-nous",
     visitTitle:"Visitez-nous",
-    visitAddress1:"Noukchott, Mauritanie",
-    visitAddress2:"123 rue de la liberté",
+    visitAddress1:"Noukchott, Carafour zeytouna",
+    visitAddress2:"Rue mohammed ould dahi",
     callTitle:"Appelez-nous",
 
     /**
     * Footer
     */
-    footerCopyRightInfo: "© 2025 Tous droits réservés par",
+    footerCopyRightInfo: "© 2025 Tous droits réservés par_",
   },
   ar: {
     /** 
@@ -212,7 +212,7 @@ const translations = {
     contactTitle:"اتصل بنا",
     visitTitle:"زورنا",
     visitAddress1:"نواكشوط، موريتانيا",
-    visitAddress2:"123 شارع الحرية",
+    visitAddress2:"كارفور الزيتونة - شارع محمد ولد داه",
     callTitle:"اتصل بنا",
 
     /**
