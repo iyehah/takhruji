@@ -333,3 +333,23 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", loadLanguage); 
+
+/**
+ * Show confetti effect on the page.
+ * It is used to celebrate the first visit of the user to the page.
+ */
+function showConfetti() {
+  confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
+}
+
+// Check if it's the first time visiting the page
+if (!localStorage.getItem('firstVisit')) {
+  // Trigger confetti
+  showConfetti();
+  // Mark as visited
+  localStorage.setItem('firstVisit', 'true');
+}
