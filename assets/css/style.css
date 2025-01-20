@@ -29,6 +29,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
+  --green:hsl(129, 42%, 37%);
 
   /**
    * gradient color
@@ -698,6 +699,17 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-1);
+}
+.whatsaAppbtn{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--green);
+  color: var(--white-1);
+  padding: 12px;
+  box-shadow: var(--shadow-2);
+  border-radius: 50%;
+  z-index: 4;
 }
 
 .back-top-btn.active {
