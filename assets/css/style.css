@@ -659,7 +659,7 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-.footer {
+footer {
   background-color: var(--white-1);
   padding-block: 40px;
 }
@@ -672,13 +672,14 @@ body {
   justify-content: center;
 }
 
-.copyright-link {
+footer .link {
   color: var(--safety-orange);
   font-weight: var(--fw-500);
   display: inline-block;
+  padding: 3px;
 }
 
-.footer .developed-by {
+footer .developed-by {
   font-size: var(--fs-6);
   text-align: center;
   display: flex;
@@ -687,10 +688,8 @@ body {
   opacity: 0.8;
 }
 
-.footer .developed-by a {
+footer .developed-by a {
   font-weight: bold;
-  display: inline-block;
-  color:var(--safety-orange);
 }
 
 
