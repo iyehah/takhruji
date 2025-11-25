@@ -141,7 +141,7 @@ const translations = {
     /**
     * Footer
     */
-    footerCopyRightInfo: "© 2025 Tous droits réservés par_",
+    footerCopyRightInfo: "© 2025 Tous droits réservés par ",
   },
   ar: {
     /** 
