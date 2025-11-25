@@ -678,6 +678,15 @@ body {
   display: inline-block;
 }
 
+.footer .developed-by {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer .developed-by a {
+  font-weight: bold;
+}
 
 
 
