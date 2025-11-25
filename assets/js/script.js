@@ -141,7 +141,7 @@ const translations = {
     /**
     * Footer
     */
-    footerCopyRightInfo: "© 2025 Tous droits réservés par ",
+    // footerCopyRightInfo: "© 2025 Tous droits réservés par ",
   },
   ar: {
     /** 
@@ -218,7 +218,8 @@ const translations = {
     /**
     * Footer
     */
-    footerCopyRightInfo: " © 2025  جميع الحقوق محفوظة بواسطة",},
+    // footerCopyRightInfo: " © 2025  جميع الحقوق محفوظة بواسطة",
+  },
 };
 
 
@@ -329,7 +330,7 @@ function switchLanguage(lang) {
   document.querySelector("[data-translate='visitAddress1']").textContent = translations[lang].visitAddress1;
   document.querySelector("[data-translate='visitAddress2']").textContent = translations[lang].visitAddress2;
   document.querySelector("[data-translate='callTitle']").textContent = translations[lang].callTitle;
-  document.querySelector("[data-translate='footerCopyRightInfo']").textContent = translations[lang].footerCopyRightInfo;
+  // document.querySelector("[data-translate='footerCopyRightInfo']").textContent = translations[lang].footerCopyRightInfo;
 }
 
 document.addEventListener("DOMContentLoaded", loadLanguage); 

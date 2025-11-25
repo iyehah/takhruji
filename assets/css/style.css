@@ -679,13 +679,18 @@ body {
 }
 
 .footer .developed-by {
-  margin-top: 8px;
-  font-size: 0.9rem;
+  font-size: var(--fs-6);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.8;
 }
 
 .footer .developed-by a {
   font-weight: bold;
+  display: inline-block;
+  color:var(--safety-orange);
 }
 
 
